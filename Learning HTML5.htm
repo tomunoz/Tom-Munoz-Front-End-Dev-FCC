@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang=“en-US”>
+
+<!-- This page created by Tom Munoz as part of the FreeCodeCamp challenge to
+		create a basic front end...Personal Portfolio Webpage. -->
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("TitansOfMischiefTidewater2014-2.jpg");
+
+    /* Set a specific height */
+    height: 20%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+}
+
+div.fixed {
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	}
+	
+ul.fixed {
+	position: fixed;
+	right: 0;
+	left: 0;
+	}
+
+#tommenu {
+  background-color: blue;
+  height: 50px;
+}
+
+#tombody {
+  height: 1800px;
+  z-index: -1;
+}
+
+}
+#tomfooter {
+  background-color: blue;
+  height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 49px;
+    overflow: hidden;
+    background-color: #0000ff;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #00ff00;
+}
+
+a:link {
+color:white;
+}
+
+a:visited {
+color:white;
+bacground-color:white;
+}
+
+a:active {
+color:white;
+}
+
+</style>
+
+<head>
+  <title>Tom Munoz - Personal Portfolio Webpage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- THIS SECTION IS FOR THE MENU AT TOP OF PAGE -->
+
+<a name="TOMMUNOZ"></a>
+<div class="wrapper-fluid">
+  <div class="container-fluid">
+      <div id="tommenu" style="z-index:1;">
+		<strong>
+			<ul class="fixed" style="background-color:#0000ff; color:white; z-index:1;">
+			    <li><a href="#CONTACT">CONTACT</a></li>
+			    <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+			    <li><a href="#ABOUT">ABOUT</a></li>
+			    <li style="float:left; margin-left: 100px; padding: 10px; font-size:20px;">Tom Munoz</li>
+			</ul>
+		</strong>
+	  </div>
+<!-- END OF MENU -->
+
+<!-- THIS SECTION IS THE MAIN BODY -->
+      <div id="tombody">
+        <div style="background-color:#aaaaaa; font-size:20px;"><a name="ABOUT"></a>
+        <p style="font-size:20px; color:white; padding:20px">ABOUT</p>
+        <p style="text-align:center; word-wrap:break-word; padding:0px 40px 40px 40px;">
+        Project / Program manager and IT professional working global projects. Getting started with front end development.
+        Experience in full software development lifecycle, Agile management and delivery, team leader/manager.
+        Volunteer, VP and board member of local non-profit Ultimate frisbee sports organization.
+        Avid and active Ultimate frisbee player...have disc, will huck!
+        </p>
+        </div>
+        
+        <div class="parallax"></div>
+        
+		<div style="background-color:#bbbbbb; background: font-size:20px;"><a name="PORTFOLIO"></a>
+		<p style="font-size:20px; color:white; padding:20px;">PORTFOLIO</p>
+        <p style="text-align:center; word-wrap:break-word; padding:0px 40px 40px 40px;">
+        Just getting started so don't have any portfolios other than the tribute page and this page.
+        Need to add some placeholders.
+        <br>
+                <img src="WilliamTyndaleThumbnail1.png" alt="William Tyndale Tribute Page" width="350px" heigh="400px"></img>
+        </p>
+		</div>
+		
+		<div style="background-color:#cccccc;"><a name="CONTACT"></a>
+		<p style="font-size:20px; color:white; padding:20px;">CONTACT</p>
+        <p style="text-align:center; word-wrap:break-word; padding:0px 40px 40px 40px; font-size:20px;">
+        Please provide your contact details if you would like to send me a message.
+        I endeavor to respond as soon as I can. Thanks!
+        </p>
+
+<div style="margin-left:10%;">       
+<form action="mailto:tom.o.munoz@gmail.com" method="post" enctype="text/plain" id="messagetext">
+<table>
+	<tbody>
+		<tr>
+			<td>First name:</td>
+			<td><input type="text" name="FirstName" placeholder="First name" required></td>
+		</tr>
+		<tr>
+			<td>Last name:</td>
+			<td><input type="text" name="LastName" placeholder="Last name" required></td>
+		</tr>
+		<tr>
+			<td>Email address:</td>
+			<td><input type="email" name="EmailAddress" placeholder="Email address" required></td>
+		</tr>
+		<tr>
+			<td>Phone number: (optional)</td>
+			<td><input type="tel" name="PhoneNumber" placeholder="Phone Number"></td>
+		</tr>
+		<tr>
+			<td>Please leave message (250 chars max):</td>
+			<td><textarea rows="4" cols="50" name="message" form="messagetext" placeholder="Enter your message here."></textarea></td>
+		</tr>
+		<tr>
+			<td><button type="reset" value="Reset">Reset</td>
+			<td><button type="submit" value="Send">Submit</button></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+</div>
+
+		</div>
+		</div>
+		</div>
+<!-- END OF MAIN BODY -->
+
+<!-- THIS SECTION IS THE FOOTER -->
+      <div id="tomfooter" class="fixed">
+
+<ul>
+  <li><a href="https://www.linkedin.com/in/tom-munoz-804a932" target="_blank">LinkedIn</a></li>
+  <li><a href="https://twitter.com/tomomunoz" target="_blank">Twitter</a></li>
+  <li><a href="https://www.facebook.com/tom.o.munoz" target="_blank">Facebook</a></li>
+  <li style="float:left; color:white; margin-left: 50px; padding: 16px; font-size:15px;">Connect with Tom</li>
+</ul>
+
+		</div>
+<!-- END OF FOOTER -->
+      </div>
+	</div>
+</div>
+
+
+</body>
+</html>
